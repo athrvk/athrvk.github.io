@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styling.css">
-<!--    <link href="C:\Users\athar\Desktop\web_dev\fontawesome-free-5.14.0-web\css\all.css" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet"><!--    <link href="C:\Users\athar\Desktop\web_dev\fontawesome-free-5.14.0-web\css\all.css" rel="stylesheet">-->
     <title>Photo Montage</title>
 </head>
 <body>
@@ -36,41 +36,72 @@
     <section id="photoGrid" class="mt-5">
 
         <ul class="row justify-content-between mx-0 px-0">
-            <li class="col-sm-8">
-                <ul class="row p-0 align-items-center text-center">
-                    <li class="col-12 col-lg-6 col-xl-6 justify-content-between">
+            <li class="col-sm-8 col-md-6 col-lg-8">
+                <ul class="row p-0 justify-content-between align-items-center text-center">
+                    <!--1--><li id="img1" class=" col-12 col-sm-8 col-lg-6 col-xl-6">
                         <iframe src="https://www.instagram.com/p/B9edgNMpiTP/embed" width="400" height="453" ></iframe>
                     </li>
-                    <li class="col-12 col-lg-6 col-xl-6">
+                    <!--2--><li id="img2" class=" col-12 col-sm-8 col-lg-6 col-xl-6">
                         <iframe src="https://www.instagram.com/p/B6Ye6SdpD2K/embed" width="400" height="553" ></iframe>
                     </li>
-                    <li class="col-12 col-lg-6 col-xl-6">
-                        <iframe src="https://www.instagram.com/p/B8MLHAeJ0u5/embed" width="400" height="373" ></iframe>
-                    </li>
-                    <li class="col-12 col-lg-6 col-xl-6">
+                    <!--3--><li id="img3" class=" col-12 col-sm-8 col-lg-6 col-xl-6">
                         <iframe src="https://www.instagram.com/p/B6OGlXcp-XH/embed" width="400" height="553" ></iframe>
                     </li>
-                    <li class="col-12 col-lg-6 col-xl-6">
+                    <!--4--><li id="img4" class=" col-12 col-sm-8 col-lg-6 col-xl-6">
+                        <iframe src="https://www.instagram.com/p/B8MLHAeJ0u5/embed" width="400" height="373" ></iframe>
+                    </li>
+                    <!--5--><li id="img5" class=" col-12 col-sm-8 col-lg-6 col-xl-6">
                         <iframe src="https://www.instagram.com/p/B7V8xDYpM9j/embed" width="400" height="553" ></iframe>
                     </li>
-                    <li class="col-12 col-lg-6 col-xl-6">
+                    <!--6--><li id="img6" class=" col-12 col-sm-8 col-lg-6 col-xl-6">
                         <iframe src="https://www.instagram.com/p/B6GR3lqJhhd/embed" width="400" height="553" ></iframe>
                     </li>
                     <li class="bgcolorhover"></li>
                 </ul>
             </li>
-            <li class="col-sm-4">
-                <div class="border-left bg-dark display-3 ">about Me</div>
+            <li id="aboutMeDiv" class="rounded col-sm-4 col-md-6 col-lg-4">
+                <div id="aboutMeHeading" class="display-3 p-3">about <span>Me</span></div>
+                <div id="aboutMe" class="mt-3">
+                    <p>
+                        <strong>
+                            hobbyist photographer | web developer | learning machines
+                        </strong>
+                    </p>
+
+                    <p>skills -</p>
+                    <ul>
+
+                        <li>C++, C, Python</li>
+                        <li>Javascript, NodeJs, html, css</li>
+                    </ul>
+
+                    <p>projects -</p>
+                    <ul>
+                        <li>
+                            Recommender:
+                                <ul>
+                                    a machine-learning algorithm to suggest
+                                    a product based on already bought items using
+                                    reinforcement learning
+                                </ul>
+                        </li>
+                        <li>
+                            Text Encryptor/Decryptor using RSA
+                            Algorithm
+                        </li>
+                    </ul>
+                </div>
             </li>
         </ul>
 
     </section>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/7a2e2fb421.js" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7a2e2fb421.js" crossorigin="anonymous"></script>
+    <script src="scripting.js"></script>
 </body>
 </html>

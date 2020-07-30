@@ -1,13 +1,39 @@
 body{
     background: #ADC4CC;
+    font-family: Nunito, sans-serif;
+    text-transform: lowercase;
+    color: rgba(15,77,146, 0.8);
+    letter-spacing: 1px;
 }
 
 #mainHeading {
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+    color: #1b5583;
     /*background-color: #F5F5F5;*/
 }
 
-@media (max-width: 576px) {
+#aboutMeDiv {
+    margin-left: 66%;
+    position: fixed;
+    height: 530px;
+    background-color: rgba(107, 123, 140, 0.5);
+    transition: color 0.75s;
+    transition-timing-function: ease-in;
+    overflow-y:scroll;
+}
+
+#aboutMeHeading {
+    color: #1b5583;
+    transition: color 0.75s;
+    transition-timing-function: ease-in;
+}
+
+#aboutMeHeading span {
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width: 576px) {
     .display-1{
         font-size: 4rem;
     }
@@ -17,14 +43,26 @@ body{
     }
 }
 
-iframe {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    iframe{
+        zoom: 1.0;
+    }
+}
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    iframe{
+        zoom: 0.8;
+    }
+}
+
+
+iframe {
     border: 0;
 }
 
 .display-1:hover, .display-1:active{
     transform: scale(1.1);
-    transition: .2s;
+    transition: .25s;
 }
 
 .fab:hover {
@@ -40,12 +78,18 @@ iframe {
     bottom: 0;
     left: 0;
     transition: .75s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in;
     pointer-events: none;
 }
 
 li {
     list-style:none;
+    padding-bottom: 1rem;
+}
+
+#aboutMe {
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
 }
 
 .iconsUsed {
@@ -60,11 +104,9 @@ li {
 hr {
     margin-top: 170px;
     border: 0;
-    height: 1px;
+    height: 2px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(128, 128, 128, 0.75), rgba(0, 0, 0, 0));
 }
-
-
 
 
 #photoGrid ul li ul li:first-child:hover ~ .bgcolorhover {
@@ -89,4 +131,17 @@ hr {
 
 #photoGrid ul li ul li:nth-child(6):hover ~ .bgcolorhover {
     background: rgb(125,81,45);
+}
+
+#aboutMeDiv::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+}
+#aboutMeDiv::-webkit-scrollbar-track {
+    background: slategray;        /* color of the tracking area */
+    border-radius: 20px ;
+}
+#aboutMeDiv::-webkit-scrollbar-thumb {
+    background-color: lightslategrey;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 0 solid gray;  /* creates padding around scroll thumb */
 }
