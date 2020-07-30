@@ -42,7 +42,7 @@ body{
     }
     #aboutMeDiv {
         margin-left: auto;
-        position: relative;
+        position: initial;
     }
 }
 
