@@ -7,6 +7,10 @@ function shuffleImgs() {
     }
 }
 
+function scrollUp(){
+    $('html, body').animate({scrollTop:0}, '250');
+}
+
 shuffleButton.addEventListener('click', shuffleImgs);
 
 var imgelem = [document.querySelector("#img1"),
@@ -24,3 +28,4 @@ for(var i =0;i<imgelem.length;i++){
         document.querySelector("#aboutMeHeading").style.color = null;
     });
 }
+
