@@ -29,3 +29,19 @@ for(var i =0;i<imgelem.length;i++){
     });
 }
 
+window.addEventListener("scroll",function(){
+    var target = $('#aboutMeDiv');
+    if(window.innerWidth > 576){
+        if(window.pageYOffset > 1200){
+            target.fadeOut(150);
+            // target.style.marginLeft = '0';
+            // target.style.position = "static";
+        }
+        else if(window.pageYOffset < 1200){
+            target.fadeIn(500);
+            // target.style.marginLeft = '66%';
+            // target.style.position = "fixed";
+        }
+    }
+
+},false);
